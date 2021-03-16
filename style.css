@@ -37,6 +37,12 @@
 .css-moments {
     color: white;
     text-align: center;
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('./images/partygold.jpg');
     background-attachment:fixed;
     height: 100%; 
     padding-top: 170px;
