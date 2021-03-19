@@ -277,7 +277,11 @@
 }
 
 /* Mobile Phone */
-@media (max-width: 764px){    
+@media (max-width: 764px){  
+    .css-vision-image{
+        height: 400px;        
+    }
+    
     .css-carousel{
         height: 800px;
     }
