@@ -85,8 +85,8 @@
     justify-content: center;
     flex-direction: column;    
     /* width: 100%;     */
-    background-color: #9B491E;
-    color: white;
+    background-color: #F2B28A;
+    color: #181818;
     font-size: 15px;
     line-height: 28px;
     padding-left: 40px;        
@@ -94,7 +94,7 @@
 }
 
 .css-vision-part1-heading{
-    color: #F8CEA8;
+    color: black;
     line-height:54px;
     font-size: 50px;
     margin-bottom: 50px;
@@ -213,10 +213,25 @@
     margin-bottom: 50px;
 }
 
-.css-contact{
+.css-contact{    
     background-color: #181818;
     text-align: center;
     color: whitesmoke;
+}
+
+.css-rental-title{
+    padding-top: 100px;
+    font-size: 40px;
+    font-family: sans-serif;
+    line-height: 54px;    
+    text-align: center;
+    color: #F8CFA9;
+}
+.css-rental-subtitle{
+    font-family: 'Dancing Script', cursive;;
+    font-size: 23px;
+    line-height: 32px;
+    padding-top: 20px;
 }
 
 /* Tablet */
