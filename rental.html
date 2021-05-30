@@ -8,6 +8,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"> </script>
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,6 +19,15 @@
   <link rel="stylesheet" href="style.css">
   <title>Rental Homes | Param Events</title>
   <style>
+    .owl-carousel .owl-stage {
+      display: flex;
+    }
+
+    .owl-carousel .owl-item img {
+      width: auto;
+      height: 100%;
+    }
+
     .bd-placeholder-img {
       font-size: 1.125rem;
       text-anchor: middle;
@@ -66,86 +77,73 @@
   <!-- NavBar End -->
 
   <!-- body -->
-  <main class="bg-light text-light" style="overflow: hidden;">
-
-    <div class="container marketing">      
-      <div class="pt-5">
-        <h1 class="text-center" style="color: #DFBA98;">Rental Homes</h1>
-        <p class="css-past-events-subheader text-dark" style="font-size: 21px;">Something More than A House!</p>
-      </div>
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider my-4" style="background-color: white;">
-
-      <div class="row featurette" style="background-color: #2d2d2d;">
-        <div class="col-md-7 p-5">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span>
-          </h2>
-          <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose
-            here.</p>
-        </div>
-        <div class="col-md-5">
-          <img src="./images/rental/weekend homes/rental2.JPG" height="500" width="500" alt="">
-            <title>Placeholder</title>
-            
-          </svg>
-
-        </div>
-      </div>
-
-      <hr class="featurette-divider my-4 " style="background-color: white;">
-
-      <div class="row featurette" style="background-color: #2d2d2d;">
-        <div class="col-md-7 p-5">
-          <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
-            layout would work with some actual real-world content in place.</p>
-        </div>
-        <div class="col-md-5 order-md-1 pl-0">
-          <img src="./images/rental/weekend homes/rental3.jpg" alt="rental homes" width="500" height="500">
-
-        </div>
-      </div>
-
-      <hr class="featurette-divider my-5" style="background-color: white;">
-
-      <div class="row featurette" style="background-color: #2d2d2d;">
-        <div class="col-md-7 p-5">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
-            intended to be actually read, simply here to give you a better view of what this would look like with some
-            actual content. Your content.</p>
-        </div>
-        <div class="col-md-5">
-          <img src="./images/rental/weekend homes/rental.png" alt="rental homes image" width="500" height="500">
-        </div>
-      </div>
-      <hr class="featurette-divider" style="background-color: white;">
+  <main style="background-color: #2F2F2F;">
+    <div class="pt-5">
+      <h1 class="text-center text-white">Param Decorations</h1>
+      <p class="css-past-events-subheader text-white" style="font-size: 21px;">Adding colours of Happiness to your event
+      </p>
     </div>
 
-    <div class="text-dark text-center">      
-      <h3>All of our homes are at Surat, Gujarat.</h3>      
-      <p>For more Info!</p>
-      <a href="./contact.html"><button type="button" class="btn btn-lg css-moments-button mb-4" style="border-radius: 10px;">Reach out to us now</button></a>      
+    <div>
+      <div id="carouselExampleControls" class="text-center pb-5 container carousel slide" data-ride="carousel" style="background-color: #2F2F2F;">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item text-center active">
+            <div class="container">
+              <img class="d-block mx-auto rental-img" src="./images/city-beach-exterior-house.jpg"
+                alt="First slide">
+              <h5 class="pt-3 text-white">Farm House, Surat, Gujarat</h5>
+              <p>...</p>
+            </div>
+          </div>
+
+          <div class="carousel-item text-center">
+            <img class="d-block mx-auto rental-img" src="./images/city-beach-exterior-house.jpg" alt="Second slide">
+            <h5 class="pt-3 text-white">Farm House, Surat, Gujarat</h5>
+            <p>...</p>
+          </div>
+
+          <div class="carousel-item text-center">
+            <img class="d-block mx-auto rental-img" src="./images/city-beach-exterior-house.jpg" alt="Second slide">
+            <h5 class="pt-3 text-white">Farm House, Surat, Gujarat</h5>
+            <p>...</p>
+          </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
   </main>
   <!-- body -->
   <!-- footer start -->
   <footer>
     <div class="css-contact" style="margin-bottom: 0px; padding-bottom: 0px;">
-      <div class="py-3">          
-        <h4 style="text-decoration: none; font-family: sans-serif ;">Contact Us</h4>                    
+      <div class="py-3">
+        <h4 style="text-decoration: none; font-family: sans-serif ;">Contact Us</h4>
         <p class="pt-3">+918160554061</p>
-        <p class="p-0">parampatel9099@gmail.com</p>                              
-        <a href="https://www.instagram.com/param.__.photography/" target="blank" class="mr-2"><img src="./images/icons/instagram-01.png" alt="Instagram" height="40px" width="40px"></a>
-        <a href="https://api.whatsapp.com/send?phone=918160554061" target="blank" class="mr-2"><img src="./images/icons/WA.png" alt="Whatsapp" height="40px" width="40px"></a>           
-        <a href="https://www.youtube.com/channel/UCOS5leON8SN25tVWbijG9kA" target="blank" class="mr-2"><img src="./images/icons/youtube.png" alt="YouTube" height="40px" width="40px"></a>           
-      </div>                
-    </div>      
-  </footer>        
+        <p class="p-0">parampatel9099@gmail.com</p>
+        <a href="https://www.instagram.com/param.__.photography/" target="blank" class="mr-2"><img
+            src="./images/icons/instagram-01.png" alt="Instagram" height="40px" width="40px"></a>
+        <a href="https://api.whatsapp.com/send?phone=918160554061" target="blank" class="mr-2"><img
+            src="./images/icons/WA.png" alt="Whatsapp" height="40px" width="40px"></a>
+        <a href="https://www.youtube.com/channel/UCOS5leON8SN25tVWbijG9kA" target="blank" class="mr-2"><img
+            src="./images/icons/youtube.png" alt="YouTube" height="40px" width="40px"></a>
+      </div>
+    </div>
+  </footer>
   <!-- footer end -->
 </body>
+
 
 </html>

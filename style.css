@@ -301,6 +301,10 @@
 
 /* Mobile Phone */
 @media (max-width: 764px){  
+    .rental-img{
+        width: 100%;
+    }
+
     .css-vision-image{
         display:none;
     }
